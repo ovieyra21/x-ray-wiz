@@ -2,128 +2,114 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Medical Design System - Professional dental imaging platform
+/* Premium Medical Design System - Dark Theme with Luxury Accents
+Professional dental imaging platform with high-impact visuals.
 All colors MUST be HSL for proper theming.
 */
 
 @layer base {
   :root {
-    /* Medical Background System */
-    --background: 240 20% 99%;
-    --foreground: 215 25% 15%;
-
-    /* Card & Surface Colors */
-    --card: 0 0% 100%;
-    --card-foreground: 215 25% 15%;
-
-    /* Interactive Elements */
-    --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 15%;
-
-    /* Medical Primary - Professional Blue */
-    --primary: 213 94% 68%;
-    --primary-foreground: 0 0% 100%;
-    --primary-hover: 213 94% 60%;
-    --primary-muted: 213 60% 90%;
-
-    /* Medical Secondary - Soft Clinical Gray */
-    --secondary: 215 15% 95%;
-    --secondary-foreground: 215 25% 25%;
-
-    /* Muted Medical Tones */
-    --muted: 215 15% 96%;
-    --muted-foreground: 215 15% 50%;
-
-    /* Accent - Medical Teal */
-    --accent: 180 70% 50%;
-    --accent-foreground: 0 0% 100%;
-
-    /* Medical Status Colors */
-    --success: 142 76% 36%;
-    --success-foreground: 0 0% 100%;
-    --warning: 38 92% 50%;
-    --warning-foreground: 0 0% 100%;
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
-
-    /* Border & Input System */
-    --border: 215 15% 88%;
-    --input: 215 15% 90%;
-    --ring: 213 94% 68%;
-
-    /* Radius System */
-    --radius: 0.75rem;
-
-    /* Medical Gradients */
-    --gradient-medical: linear-gradient(135deg, hsl(213, 94%, 68%), hsl(180, 70%, 50%));
-    --gradient-subtle: linear-gradient(180deg, hsl(240, 20%, 99%), hsl(215, 15%, 96%));
-    --gradient-card: linear-gradient(145deg, hsl(0, 0%, 100%), hsl(215, 15%, 98%));
-
-    /* Medical Shadows */
-    --shadow-medical: 0 10px 25px -5px hsl(213, 94%, 68% / 0.1);
-    --shadow-card: 0 4px 15px -2px hsl(215, 25%, 15% / 0.08);
-    --shadow-elevated: 0 20px 40px -10px hsl(215, 25%, 15% / 0.15);
-
-    /* Transitions */
-    --transition-medical: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-
-    /* Typography Scale */
-    --font-medical: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-mono: 'JetBrains Mono', Consolas, monospace;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
+    /* Premium Dark Background System */
+    --background: 222 47% 11%;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    /* Card & Surface Colors - Premium Glass Effect */
+    --card: 225 39% 17%;
     --card-foreground: 210 40% 98%;
+    --card-secondary: 225 39% 13%;
 
-    --popover: 222.2 84% 4.9%;
+    /* Interactive Elements */
+    --popover: 225 39% 17%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    /* Premium Primary - Medical Navy Blue */
+    --primary: 215 84% 65%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 215 84% 70%;
+    --primary-muted: 215 84% 20%;
+    --primary-glow: 215 84% 85%;
 
-    --secondary: 217.2 32.6% 17.5%;
+    /* Luxury Secondary - Deep Navy */
+    --secondary: 225 39% 21%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    /* Muted Premium Tones */
+    --muted: 225 39% 15%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    /* Premium Accent - Golden/Neon Green */
+    --accent: 64 91% 58%;
+    --accent-foreground: 222 47% 11%;
+    --accent-glow: 64 91% 75%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    /* Luxury Gold Accent */
+    --gold: 45 93% 58%;
+    --gold-foreground: 222 47% 11%;
+    --gold-muted: 45 93% 25%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Medical Status Colors - Premium */
+    --success: 142 76% 45%;
+    --success-foreground: 0 0% 100%;
+    --success-glow: 142 76% 70%;
+    
+    --warning: 38 92% 58%;
+    --warning-foreground: 0 0% 100%;
+    --warning-glow: 38 92% 75%;
+    
+    --destructive: 0 84% 65%;
+    --destructive-foreground: 0 0% 100%;
+    --destructive-glow: 0 84% 80%;
+
+    /* Border & Input System - Premium Glass */
+    --border: 225 39% 25%;
+    --input: 225 39% 21%;
+    --ring: 215 84% 65%;
+
+    /* Radius System - Modern Curves */
+    --radius: 0.75rem;
+
+    /* Premium Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(215, 84%, 65%), hsl(64, 91%, 58%));
+    --gradient-card: linear-gradient(145deg, hsl(225, 39%, 17%), hsl(225, 39%, 13%));
+    --gradient-premium: linear-gradient(135deg, hsl(215, 84%, 65%), hsl(45, 93%, 58%));
+    --gradient-glow: linear-gradient(135deg, hsl(215, 84%, 85%), hsl(64, 91%, 75%));
+    --gradient-surface: linear-gradient(180deg, hsl(225, 39%, 17%), hsl(225, 39%, 15%));
+
+    /* Premium Shadows & Glows */
+    --shadow-premium: 0 25px 50px -12px hsl(215, 84%, 65% / 0.25);
+    --shadow-card: 0 8px 30px -4px hsl(225, 39%, 10% / 0.5);
+    --shadow-elevated: 0 32px 64px -12px hsl(225, 39%, 8% / 0.6);
+    --glow-primary: 0 0 30px hsl(215, 84%, 65% / 0.4);
+    --glow-accent: 0 0 30px hsl(64, 91%, 58% / 0.4);
+    --glow-gold: 0 0 30px hsl(45, 93%, 58% / 0.4);
+
+    /* Transitions - Smooth Premium */
+    --transition-premium: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Typography Scale - Luxury */
+    --font-medical: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', Consolas, monospace;
+    --font-display: 'Inter', system-ui, sans-serif;
+
+  }
+}
+
+/* Premium Animation System */
+@layer base {
+  @keyframes glow-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
   }
 }
 
@@ -133,6 +119,58 @@ All colors MUST be HSL for proper theming.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-medical;
+  }
+  
+  /* Premium Glass Effect */
+  .glass-card {
+    background: linear-gradient(145deg, 
+      hsl(var(--card)) / 0.8, 
+      hsl(var(--card-secondary)) / 0.6
+    );
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--border) / 0.3);
+  }
+  
+  /* Premium Glow Effects */
+  .glow-primary {
+    box-shadow: var(--glow-primary);
+  }
+  
+  .glow-accent {
+    box-shadow: var(--glow-accent);
+  }
+  
+  .glow-gold {
+    box-shadow: var(--glow-gold);
+  }
+  
+  /* Premium Hover Effects */
+  .hover-glow:hover {
+    box-shadow: var(--glow-primary);
+    transform: translateY(-2px);
+    transition: var(--transition-glow);
+  }
+  
+  /* Hero Background */
+  .hero-bg {
+    background: radial-gradient(circle at 20% 80%, hsl(215, 84%, 65%) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, hsl(64, 91%, 58%) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, hsl(45, 93%, 58%) 0%, transparent 50%),
+                hsl(var(--background));
+  }
+}
+
+@layer components {
+  /* Premium Button Variants */
+  .btn-premium {
+    @apply bg-gradient-to-r from-primary to-accent text-white font-semibold px-6 py-3 rounded-xl;
+    @apply shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300;
+    @apply hover:from-primary-hover hover:to-accent-glow;
+  }
+  
+  .btn-gold {
+    @apply bg-gradient-to-r from-gold to-warning text-gold-foreground font-semibold px-6 py-3 rounded-xl;
+    @apply shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300;
   }
 }
